@@ -1,0 +1,140 @@
+/* 1. BASE */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    color: #231F20;
+}
+
+a {
+    color: #FF5314;
+}
+
+.credito {
+    font-size: 13px;
+    color: #777;
+}
+
+img {
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* 2. HEADER E NAV (STICKY) */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #231F20;
+    padding: 10px 20px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 20px;
+    margin: 0;
+}
+
+#menu-toggle,
+.menu-icon {
+    display: none;
+}
+
+nav .menu {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* 3. CONTEÚDO PRINCIPAL (1 COLUNA) */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+#introducao figure {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+/* 4. GALERIA FLEXBOX */
+.galeria-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.galeria-container .card {
+    flex: 1 1 300px;
+    margin: 0;
+    text-align: center;
+}
+
+.galeria-container img {
+    width: 100%;
+    height: auto;
+}
+
+/* 5. FOOTER */
+footer {
+    background: #231F20;
+    color: #fff;
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+footer h3 {
+    color: #FF5314;
+    margin: 5px 0;
+}
+
+/* 6. RESPONSIVO (MOBILE) */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        color: #fff;
+        font-size: 26px;
+        cursor: pointer;
+    }
+
+    nav .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: #231F20;
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    #menu-toggle:checked ~ .menu {
+        display: flex;
+    }
+
+    #introducao figure {
+        flex-direction: column;
+        text-align: center;
+    }
+}
