@@ -1,17 +1,12 @@
-/* 1. BASE */
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     color: #231F20;
+    line-height: 1.7;
 }
 
 a {
     color: #FF5314;
-}
-
-.credito {
-    font-size: 13px;
-    color: #777;
 }
 
 img {
@@ -19,7 +14,6 @@ img {
     object-fit: cover;
 }
 
-/* 2. HEADER E NAV (STICKY) */
 header {
     display: flex;
     justify-content: space-between;
@@ -28,18 +22,18 @@ header {
     top: 0;
     z-index: 1000;
     background: #231F20;
-    padding: 10px 20px;
+    padding: 20px 40px;
 }
 
 header .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     color: #fff;
 }
 
 header h1 {
-    font-size: 20px;
+    font-size: 22px;
     margin: 0;
 }
 
@@ -50,7 +44,7 @@ header h1 {
 
 nav .menu {
     display: flex;
-    gap: 15px;
+    gap: 25px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -62,30 +56,41 @@ nav a {
     font-weight: bold;
 }
 
-/* 3. CONTEÚDO PRINCIPAL (1 COLUNA) */
 main {
     max-width: 900px;
     margin: 0 auto;
-    padding: 20px;
-    line-height: 1.5;
+    padding: 50px 25px;
+}
+
+section {
+    margin-bottom: 60px;
 }
 
 #introducao figure {
     display: flex;
     align-items: center;
-    gap: 15px;
-    margin: 20px 0;
+    gap: 30px;
+    margin: 40px 0;
 }
 
-/* 4. GALERIA FLEXBOX */
+#introducao ul {
+    margin: 30px 0;
+    padding-left: 25px;
+}
+
+#introducao li {
+    margin-bottom: 15px;
+}
+
 .galeria-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 40px;
+    margin-top: 30px;
 }
 
 .galeria-container .card {
-    flex: 1 1 300px;
+    flex: 1 1 320px;
     margin: 0;
     text-align: center;
 }
@@ -93,28 +98,31 @@ main {
 .galeria-container img {
     width: 100%;
     height: auto;
+    margin-bottom: 15px;
 }
 
-/* 5. FOOTER */
 footer {
     background: #231F20;
     color: #fff;
-    padding: 20px;
-    margin-top: 40px;
+    padding: 40px 20px;
+    margin-top: 80px;
     text-align: center;
 }
 
 footer h3 {
     color: #FF5314;
-    margin: 5px 0;
+    margin: 0 0 10px 0;
 }
 
-/* 6. RESPONSIVO (MOBILE) */
 @media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+    }
+
     .menu-icon {
         display: block;
         color: #fff;
-        font-size: 26px;
+        font-size: 28px;
         cursor: pointer;
     }
 
@@ -126,7 +134,8 @@ footer h3 {
         right: 0;
         background: #231F20;
         width: 100%;
-        padding: 15px 0;
+        padding: 25px 0;
+        gap: 20px;
     }
 
     #menu-toggle:checked ~ .menu {
@@ -136,5 +145,6 @@ footer h3 {
     #introducao figure {
         flex-direction: column;
         text-align: center;
+        gap: 20px;
     }
 }
