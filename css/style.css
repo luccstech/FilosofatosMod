@@ -5,10 +5,6 @@ body {
     line-height: 1.7;
 }
 
-a {
-    color: #FF5314;
-}
-
 img {
     border-radius: 8px;
     object-fit: cover;
@@ -20,7 +16,6 @@ header {
     align-items: center;
     position: sticky;
     top: 0;
-    z-index: 1000;
     background: #231F20;
     padding: 20px 40px;
 }
