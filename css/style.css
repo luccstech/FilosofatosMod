@@ -17,18 +17,18 @@ header {
     position: sticky;
     top: 0;
     background: #231F20;
-    padding: 6px 20px;
+    padding: 12px 25px;
 }
 
 header .logo {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 12px;
     color: #fff;
 }
 
 header h1 {
-    font-size: 16px;
+    font-size: 20px;
     margin: 0;
 }
 
@@ -111,7 +111,7 @@ footer h3 {
 
 @media (max-width: 768px) {
     header {
-        padding: 6px 20px;
+        padding: 12px 20px;
     }
 
     .menu-icon {
